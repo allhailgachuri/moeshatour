@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f4ea; /* Navbar background color */
+    padding: 15px 20px; /* Padding for the navbar */
+    color: black; /* Navbar text color */
+    transition: top 0.3s ease-in-out;
+    position: fixed; /* Fix the navbar to make it scrollable */
+    width: 100%;
+    top: 0; /* Ensure the navbar starts at the top */
+    z-index: 1000; /* Place it above other content */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 120px; /* Smaller logo size */
+    height: auto;
+    margin-right: 8px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Reduced gap between links */
+    margin-right: 50px;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #000000; /* Changed color for better visibility */
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color:  #FFD700; /* Subtle hover effect */
+  }
+  
+  .hidden-nav {
+    top: -100px; /* Adjust this value to hide the header completely */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-top: 150px; /* Add margin to account for the fixed navbar */
+  }
+  
+  .destination-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 300px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow to the cards */
+  }
+  
+  .destination-card:hover {
+    transform: scale(1.05); /* Add a subtle hover effect to the cards */
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .destination-details {
+    padding: 20px;
+  }
+  
+  .destination-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .destination-details p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #337ab7;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .destination-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destination-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #81C3FF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4A90E2;
+  }
+  
+  .back-btn {
+    background-color: #81C3FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 100px;
+  }
+  
+  /* Adjusted CSS to fit with the one above */
+  
+  .destination-grid {
+    margin-top: 150px; /* Add margin to account for the fixed navbar */
+  }
+  
+  .destination-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow to the cards */
+  }
+  
+  .destination-card:hover {
+    transform: scale(1.05); /* Add a subtle hover effect to the cards */
+  }

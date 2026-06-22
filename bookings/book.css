@@ -1,0 +1,258 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f9f4ea;
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden-header {
+    transform: translateY(-100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px; /* Smaller logo size */
+    height: auto;
+    margin-right: 8px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 100px; /* Reduced gap between links */
+    margin-right: 50px;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;; /* Subtle hover effect */
+}
+footer{
+    background-color: #f9f4ea;
+ }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+   
+  }
+  
+  .footer-column {
+    width: 23%;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.8rem;
+    color: #000;
+  }
+  
+  .footer-column p {
+    color: #666;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #000;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #555;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+  .mail-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mail-input input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .mail-input button {
+    padding: 10px;
+    background-color: #7bc7ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .mail-input button:hover {
+    background-color: #559ed6;
+  }
+  .success-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #f9f4ea;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .success-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  .success-card p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .success-card .back-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .success-card .back-btn:hover {
+    background-color: #2980b9;
+  }
+  
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }

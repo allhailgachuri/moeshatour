@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f4ea; /* Navbar background color */
+  padding: 15px 20px; /* Padding for the navbar */
+  color: black; /* Navbar text color */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 120px; /* Smaller logo size */
+  height: auto;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 40px; /* Reduced gap between links */
+  margin-right: 50px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000; /* Changed color for better visibility */
+  font-weight: normal;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color:  #FFD700; /* Subtle hover effect */
+}
+
+header {
+  color: #000000;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.description {
+  background-color: #f7f7f7;
+  padding: 1em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Responsive width */
+  margin-bottom: 2em; /* Spacing between sections */
+}
+
+.description h2, .description h3 {
+  margin-top: 0;
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px; /* Indentation for bullet points */
+}
+
+.gallery {
+  margin-top: 2em;
+  width: 80%; /* Responsive width */
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 1em;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #f9f4ea;
+  color: #000000;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .description, .gallery {
+      width: 90%; /* More width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+      flex-direction: column; /* Stack logo and nav links */
+  }
+  
+  .nav-links {
+      gap: 20px; /* Less gap on smaller screens */
+  }
+}

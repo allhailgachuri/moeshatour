@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f4ea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f4ea; /* Navbar background color */
+    padding: 15px 20px; /* Padding for the navbar */
+    color: black; /* Navbar text color */
+    transition: top 0.3s ease-in-out;
+    position: fixed; /* Fix the navbar to make it scrollable */
+    width: 100%;
+    top: 0; /* Ensure the navbar starts at the top */
+    z-index: 1000; /* Place it above other content */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px; /* Smaller logo size */
+    height: auto;
+    margin-right: 8px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Reduced gap between links */
+    margin-right: 50px;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000; /* Changed color for better visibility */
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color:  #FFD700; /* Subtle hover effect */
+}
+
+.hidden-nav {
+    top: -100px; /* Adjust this value to hide the header completely */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.car-card {
+    background-color: #f9f4ea;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.car-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.book-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.book-btn:hover {
+    background-color: #2980b9;
+}
+
+.back-btn {
+    display: block;
+    margin: 2rem auto;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+}

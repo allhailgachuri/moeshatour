@@ -1,0 +1,118 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light background for contrast */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f4ea; /* Navbar background color */
+  padding: 15px 20px; /* Padding for the navbar */
+  color: black; /* Navbar text color */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 120px; /* Smaller logo size */
+  height: auto;
+  margin-right: 8px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 40px; /* Gap between links */
+  margin-right: 50px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black; /* Link color */
+  font-weight: normal;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #FFD700; /* Gold hover effect */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-us {
+  background-color: #ffffff; /* White background for contrast */
+  padding: 30px; /* Increased padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  max-width: 800px; /* Max width for readability */
+  margin: 20px; /* Margin around the section */
+}
+
+.heading {
+  font-size: 28px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the heading */
+  color: #000000; /* Matching color with navbar */
+}
+
+.animation {
+  border-radius: 10px;
+  background-color: #f9f4ea; /* Background color */
+  background-image: url(/images/animation.gif);
+  background-repeat: no-repeat;
+  background-position: center; /* Centered animation */
+  height: 150px; /* Increased height */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space below the animation */
+}
+
+p {
+  font-size: 16px; /* Consistent font size */
+  margin-bottom: 20px; /* Space between paragraphs */
+  line-height: 1.6; /* Improved readability */
+}
+
+.slogan {
+  font-size: 20px; /* Increased slogan font size */
+  font-weight: bold;
+  color: #00698f; /* Slogan color */
+  text-align: center; /* Centered slogan */
+  margin-top: 30px; /* Space above slogan */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main {
+      padding: 10px;
+  }
+  .about-us {
+      padding: 20px; /* Adjusted padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+      padding: 5px;
+  }
+  .about-us {
+      padding: 10px; /* Adjusted padding for smaller screens */
+  }
+}
