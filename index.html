@@ -1,298 +1,512 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAFARI MARKET TOURS</title>
-    <link rel="icon" href="public/icon2.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
-rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#hero">
-                <img src="/images/logo.png" alt="Travel LogO" class="logo-image">
-                </a>
-            </div>
-            <ul class="nav-links" id="nav">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="/about us/about.html">About Us</a></li>
-                <li><a href="/destination/des.html">Destinations</a></li>
-                <li><a href="/rides/rides.html">Car Hire</a></li>
-                <li><a href="/missions/missions.html">Missionary work</a></li>
-            </ul>
-        </nav>
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Safari Market Tours creates premium Kenya and Tanzania travel experiences, custom safari packages, guided mountain climbs, car hire, and trip planning from Nairobi."
+    />
+    <meta name="theme-color" content="#0f1720" />
+    <title>Safari Market Tours | Adventure at its Best</title>
+    <link rel="icon" href="images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+      <nav class="nav-shell" aria-label="Primary">
+        <a class="brand" href="#hero" aria-label="Safari Market Tours home">
+          <img
+            src="images/logo.png"
+            alt="Safari Market Tours logo"
+            class="brand-mark"
+          />
+          <span>
+            <strong>Safari Market</strong>
+            <small>Adventure at its best</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          Menu
+        </button>
+
+        <div class="nav-group" id="primaryNav">
+          <a href="#highlights">Highlights</a>
+          <a href="#journeys">Journeys</a>
+          <a href="#fleet">Fleet</a>
+          <a href="#story">Story</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="bookings/booking.html">Plan a trip</a>
+        </div>
+      </nav>
     </header>
-    
 
     <main>
-        <section class="hero" id="hero">
-            <div class="hero-inner text-white text-center">
-                <div class="container grid">
-                    <div class="hero-inner-left">
-                        <h1>ADVENTURE AT <br> <span>it's best</span></h1>
-                        <p class="lead">Since we launched back in 1997, our commitment has been to provide our customers an unforgettable experience at an unbelievable price.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-
-      <section class="services-section" id="Services">
-    <h1>SERVICES</h1>
-    <p>Enjoy your stays from our wide range of services</p>
-    
-    <div class="services-list">
-        <div class="service-item">
-            <img src="/images/booking.png" alt="Book Now">
-            <div class="service-item-text">Easy booking from the comfort of your home</div>
+      <section class="hero" id="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="images/nairobi.jpg" alt="" />
         </div>
-        <div class="service-item">
-            <img src="/images/tour-guide.png" alt="Tour Guide">
-            <div class="service-item-text">The best tour guides to help</div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content container">
+          <div class="hero-kicker reveal">
+            Nairobi-based safaris and travel since 1997
+          </div>
+          <h1 class="hero-title reveal">
+            <span>Adventure</span>
+            <em>at its best</em>
+          </h1>
+          <p class="hero-copy reveal">
+            Premium safari journeys, coastal escapes, mountain climbs, and
+            transport solutions shaped for travellers who want the trip to feel
+            as good as the destination.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="bookings/booking.html"
+              >Book a consultation</a
+            >
+            <a class="button button-secondary" href="#journeys"
+              >Explore journeys</a
+            >
+          </div>
+          <div class="hero-proof reveal">
+            <div>
+              <strong data-counter="28">0</strong>
+              <span>Years shaping East African journeys</span>
+            </div>
+            <div>
+              <strong data-counter="460">0</strong>
+              <span>Travel collaborations and partners</span>
+            </div>
+            <div>
+              <strong data-counter="500000">0</strong>
+              <span>Guests served with custom itineraries</span>
+            </div>
+          </div>
         </div>
-        <div class="service-item">
-            <img src="/images/destination.png" alt="Destination Choices">
-            <div class="service-item-text">Lots of choices on your destination</div>
+      </section>
+
+      <section
+        class="trust-strip container reveal"
+        aria-label="Key service areas"
+      >
+        <article>
+          <span>Safari planning</span>
+          <strong>Custom routes, lodge stays, and flexible departures.</strong>
+        </article>
+        <article>
+          <span>Vehicle support</span>
+          <strong>Reliable car hire for self-drive or guided travel.</strong>
+        </article>
+        <article>
+          <span>Mission support</span>
+          <strong
+            >Purpose-led travel and community outreach coordination.</strong
+          >
+        </article>
+      </section>
+
+      <section class="section container" id="highlights">
+        <div class="section-heading reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>
+            Travel services that solve the real friction of planning a trip.
+          </h2>
+          <p>
+            We combine route planning, vehicle access, and destination expertise
+            into one practical travel system. The result is less friction,
+            better timing, and a more confident journey.
+          </p>
         </div>
-        <div class="service-item">
-            <img src="/images/taxi.png" alt="Solo Adventure">
-            <div class="service-item-text">Want a solo adventure? Easily book a ride</div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <img src="images/booking.png" alt="Booking icon" />
+            <h3>Fast booking</h3>
+            <p>
+              Ask once, book once, and let us handle the moving parts from route
+              options to availability checks.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <img src="images/tour-guide.png" alt="Tour guide icon" />
+            <h3>Local guidance</h3>
+            <p>
+              Experience-led support from a team that understands terrain,
+              timing, and how to keep a trip flowing.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <img src="images/destination.png" alt="Destination icon" />
+            <h3>Destination choice</h3>
+            <p>
+              From Mara wildlife circuits to coastal resets and mountain routes,
+              the lineup stays broad but intentional.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <img src="images/taxi.png" alt="Taxi icon" />
+            <h3>Flexible transport</h3>
+            <p>
+              Hire a vehicle with the right balance of comfort, terrain
+              readiness, and budget discipline.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <img src="images/open-hands.png" alt="Community support icon" />
+            <h3>Purpose travel</h3>
+            <p>
+              For missionary and service-driven trips, we help shape travel that
+              respects people and places.
+            </p>
+          </article>
         </div>
-        <div class="service-item">
-            <img src="/images/open-hands.png" alt="Spiritual Journey">
-            <div class="service-item-text">On a spiritual journey? Join our missions</div>
+      </section>
+
+      <section class="section container" id="journeys">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Journeys</span>
+          <h2>Featured routes selected to show the range of the brand.</h2>
+          <p>
+            These are the kinds of trips the business is built around: wildlife,
+            landscape, coastal, and mountain experiences with a booking path
+            attached.
+          </p>
         </div>
-    </div>
-    
-    <!-- Traveler image to the right -->
-    <div class="service-image">
-        <img src="images/safarinai.jpg" alt="Traveler Image">
-    </div>
-</section>
 
-        <section class="top-destinations" id="top-destinations">
-            <h2>TOP DESTINATIONS</h2>
-            <p>BROWSE OUR TOP DESTINATIONS AND ENJOY A LASTING ADVENTURE</p>
-        
-            <div class="destination-cards">
-                <!-- Destination 1 - Paris -->
-                <div class="destination-card" onclick="window.location.href='dubai-details.html'">
-                    <div class="destination-info">
-                        <h3>Mount Kenya</h3>
-                        
-                    </div>
-                    <img src="/images/mount kenya.jpeg" alt="New York" class="destination-image">
-                    <p>Enjoy white snowy peaks and a sweat as you climb up the mountain.</p>
-                    <button class="book-now"onclick="location.href='/bookings/booking.html'">BOOK NOW</button>
-                </div>
-        
-                <!-- Destination 2 - New York -->
-                <div class="destination-card" onclick="window.location.href='dubai-details.html'">
-                    <div class="destination-info">
-                        <h3>Maasai Mara</h3>
-                    </div>
-                    <img src="/images/lunch mara.jpeg" alt="New York" class="destination-image">
-                    <p>Enjoy The Serene Grasslands And Wildlife </p>
-                    <button class="book-now"onclick="location.href='/bookings/booking.html'">BOOK NOW</button>
-                
-                </div>
-        
-                <!-- Destination 3 - Dubai -->
-                <div class="destination-card" onclick="window.location.href='dubai-details.html'">
-                    <div class="destination-info">
-                        <h3>Diani</h3>
-                    
-                    </div>
-                    <img src="/images/WhatsApp Image 2024-10-06 at 11.24.42.jpeg" alt="Dubai" class="destination-image">
-                    <p>Enjoy the white sandy beaches with a mix of culture and sun</p>
-                    <button class="book-now"  onclick="location.href='/bookings/booking.html'">BOOK NOW</button>
-                </div>
+        <div class="card-grid">
+          <article class="journey-card reveal">
+            <img src="images/mount kenya.jpeg" alt="Mount Kenya" />
+            <div class="card-body">
+              <p class="card-label">Mountain climb</p>
+              <h3>Mount Kenya</h3>
+              <p>
+                High-altitude adventure with snowy peaks, dramatic routes, and a
+                strong sense of achievement.
+              </p>
+              <a class="text-link" href="bookings/booking.html"
+                >Reserve this climb</a
+              >
             </div>
-        
-            <!-- More Button -->
-            <button class="more-button" onclick="location.href='destination/des.html'">MORE</button>
-        </section>
+          </article>
+          <article class="journey-card reveal">
+            <img src="images/lunch mara.jpeg" alt="Maasai Mara" />
+            <div class="card-body">
+              <p class="card-label">Wildlife circuit</p>
+              <h3>Maasai Mara</h3>
+              <p>
+                Grassland, game drives, and one of the most recognizable safari
+                landscapes in East Africa.
+              </p>
+              <a class="text-link" href="bookings/booking.html"
+                >Reserve this safari</a
+              >
+            </div>
+          </article>
+          <article class="journey-card reveal">
+            <img
+              src="images/WhatsApp Image 2024-10-06 at 11.24.42.jpeg"
+              alt="Diani beach"
+            />
+            <div class="card-body">
+              <p class="card-label">Coastal escape</p>
+              <h3>Diani</h3>
+              <p>
+                White-sand beaches, warmer pacing, and a softer finish for
+                travellers who want recovery and style.
+              </p>
+              <a class="text-link" href="bookings/booking.html"
+                >Reserve this escape</a
+              >
+            </div>
+          </article>
+        </div>
 
-        <section class="efficient-transport" id="efficient-transport">
-            <h2>Efficient Transport</h2>
-            <p>Cruise through your dream destination hassle-free with our wide variety of cars for hire.</p>
-        
-            <div class="transport-cards">
-                <!-- Car 1 - BMW -->
-                <div class="transport-card">
-                    <div class="transport-info">
-                        <h3>Corolla</h3>
-                    </div>
-                    <img src="/cars/corolla.jpg" alt="BMW" class="transport-image">
-                    <p>Enjoy a lovely cruise through the city in our comfort hires</p>
-                    <button class="book-now" onclick="location.href='/bookings/booking.html'">BOOK NOW</button>
-                </div>
-        
-                <!-- Car 2 - Range Rover -->
-                <div class="transport-card">
-                    <div class="transport-info">
-                        <h3>Prado</h3>
-                
-                    </div>
-                    <img src="/cars/prado.jpg" class="transport-image">
-                    <p>Enjoy a lovely cruise through the city in our comfort hires</p>
-                    <button class="book-now" onclick="location.href='/bookings/booking.html'" >BOOK NOW</button>
-                </div>
-        
-                <!-- Car 3 - Toyota -->
-                <div class="transport-card">
-                    <div class="transport-info">
-                        <h3>Landcruiser V8</h3>
+        <div class="section-cta reveal">
+          <div>
+            <span class="eyebrow">See more</span>
+            <h3>
+              There are many more itineraries, but these three show the
+              direction.
+            </h3>
+          </div>
+          <a class="button button-secondary" href="destination/des.html"
+            >Browse destinations</a
+          >
+        </div>
+      </section>
 
-                    </div>
-                    <img src="/cars/v8.jpg" alt="Toyota" class="transport-image">
-                    <p>Enjoy a lovely cruise through the city in our comfort hires</p>
-                    <button class="book-now" onclick="location.href='/bookings/booking.html'">BOOK NOW</button>
-                </div>
-            </div>
-        
-            <!-- More Button -->
-            <button class="more-button"onclick="location.href='rides/rides.html'">MORE</button>
-        </section>
-        <section class="gallery-section" id="gallery">
-            <div class="gallery-header">
-                <h1>OUR GALLERY</h1>
-                <p>Pictures from our travelers</p>
-            </div>
-    
-            <div class="gallery-grid">
-                <img src="/images/dubai.jpeg" alt="Palm Trees">
-                <img src="/images/equator.jpeg" alt="Lake View">
-                <img src="/images/lunch mara.jpeg" alt="Reading by the Sea">
-                <img src="/images/WhatsApp Image 2024-10-06 at 11.24.41 (1).jpeg" alt="Beach">
-            </div>
-    
-            <div class="gallery-button">
-                <button id="moreBtn" onclick="location.href='gallery/ga.html'">MORE</button>
-            </div>
-        </section>
-        <section class="experience-section">
-            <div class="experience-container">
-                <div class="experience-image">
-                    <img src="/images/costumer.png" alt="Happy Customer">
-                </div>
-                <div class="experience-content">
-                    <h1>OUR EXPERIENCE</h1>
-                    <p>Since we launched back in 1997, our commitment has been to provide our customers an unforgettable experience at an unbelievable price.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h2 data-target="22">0</h2>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h2 data-target="460">0</h2>
-                            <p>Destination Collaborations</p>
-                        </div>
-                        <div class="stat-item">
-                            <h2 data-target="500000">0</h2>
-                            <p>Happy Customers</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="section section-alt" id="fleet">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Fleet</span>
+            <h2>
+              Transport designed for comfort, terrain, and practical travel
+              decisions.
+            </h2>
+            <p>
+              Vehicle choice matters on Kenyan routes. This fleet section turns
+              the ride into a support system rather than a generic add-on.
+            </p>
+          </div>
 
-        <section id="contact" class="contact py">
-            <div class="container grid">
-                <div class="contact-left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8149639305634!2d36.81876097570565!3d-1.284984198702795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6e93c9d1d%3A0xa59021c48035f9ff!2sUganda%20House%2C%20Kenyatta%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1728318570502!5m2!1sen!2ske" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="contact-right">
-                    <div class="contact-head">
-                        <h3 class="lead">Contact Us</h3>
-                        <p class="text text-md">Get in touch with us for any inquiries or assistance.</p>
-                    </div>
-                    <form action="https://formspree.io/f/xayrkvop" method="POST" target="_blank">
-                        <div class="form-element">
-                            <input type="text" name="name" class="form-control" placeholder="Your name" required>
-                        </div>
-                        <div class="form-element">
-                            <input type="email" name="email" class="form-control" placeholder="Your email" required>
-                        </div>
-                        <div class="form-element">
-                            <textarea rows="5" name="message" placeholder="Your Message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-submit">
-                            <i class="fas fa-arrow-right"></i> Send Message
-                        </button>
-                    </form>
-                </div>
+          <div class="fleet-grid">
+            <article class="fleet-card reveal">
+              <img src="cars/corolla.jpg" alt="Toyota Corolla" />
+              <h3>Toyota Corolla</h3>
+              <p>Clean city mobility and efficient short-route travel.</p>
+            </article>
+            <article class="fleet-card reveal">
+              <img src="cars/prado.jpg" alt="Toyota Prado" />
+              <h3>Toyota Prado</h3>
+              <p>
+                Comfortable, capable, and suited to longer safari transfers.
+              </p>
+            </article>
+            <article class="fleet-card reveal">
+              <img src="cars/v8.jpg" alt="Landcruiser V8" />
+              <h3>Landcruiser V8</h3>
+              <p>
+                Heavy-duty travel for rougher terrain and serious expedition
+                work.
+              </p>
+            </article>
+          </div>
+
+          <div class="section-cta reveal">
+            <div>
+              <span class="eyebrow">Need a vehicle?</span>
+              <h3>
+                Choose the ride that fits the itinerary, not the other way
+                around.
+              </h3>
             </div>
-        </section>
-        
-        
-        
-          <!-- Footer Section -->
-          <footer class="footer-section">
-            <div class="footer-container">
-              <div class="footer-column">
-                <a href="#hero" style="text-decoration: none;">
-                    <h3>TRAVEL</h3>
-                </a>
-                <p>Your fulfillment is our pride.</p>
-                <div class="social-icons">
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-              </div>
-        
-              <div class="footer-column">
-                <h4>CONTACT US</h4>
-                <ul>
-                  <li><a href="INFO@SAFARIMARKETAFRICA.COM">info@safarimarketafrica.com</a></li>
-                  <li>+254722519360</li>
-                  <li>+25436519360</li>
-                  <li>  View Park Towers 14th floor </li>
-                  <li>Utalii Lane </li>
-                  <li></li>
-                </ul>
-              </div>
-        
-              <div class="footer-column">
-                <h4>COMPANY</h4>
-                <ul>
-                  <li><a href="#">Partner with us</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-              </div>
-        
-              <div class="footer-column">
-                <h4>GET IN TOUCH</h4>
-                <p>Questions / Feedback</p>
-                <div class="mail-input">
-                  <input type="email" placeholder="Send Mail">
-                  <button type="submit">Send<i class="fas fa-envelope"></i></button>
-                </div>
-              </div>
-              <div id="successCard" class="success-card" style="display: none;">
-                <img src="booked.png" alt="Success Icon" class="success-icon">
-                <h2>SUCCESS</h2>
-                <p>We have recived your feedback. We will get back to you as soon as possible. Thank you</p>
-                <button onclick="closeSuccessCard()" class="book-btn">BACK</button>
+            <a class="button button-primary" href="rides/rides.html"
+              >View car hire</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="story">
+        <div class="split-layout">
+          <div class="story-visual reveal">
+            <img src="images/safarinai.jpg" alt="Traveler enjoying a safari" />
+          </div>
+          <div class="story-copy reveal">
+            <span class="eyebrow">Why this brand exists</span>
+            <h2>
+              Not just tours. A clearer way to move people through East Africa
+              with confidence.
+            </h2>
+            <p>
+              Safari Market Tours is positioned as a planning partner for
+              travellers, churches, families, and groups that want structure
+              without losing the feeling of discovery.
+            </p>
+            <div class="story-points">
+              <article>
+                <strong>1997</strong>
+                <span
+                  >Established in Nairobi with a long operating history.</span
+                >
+              </article>
+              <article>
+                <strong>Kenya + Tanzania</strong>
+                <span
+                  >Packages, climbs, coast, domestic movement, and regional
+                  reach.</span
+                >
+              </article>
+              <article>
+                <strong>Human support</strong>
+                <span
+                  >Guidance grounded in route knowledge, budget awareness, and
+                  local reality.</span
+                >
+              </article>
             </div>
-          </footer>
-        
-        
-        
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="philosophy">
+        <div class="container philosophy-shell reveal">
+          <span class="eyebrow">Manifesto</span>
+          <h2>Most travel companies focus on selling a trip.</h2>
+          <p class="philosophy-lead">
+            We focus on making the trip feel <em>intentional</em> from the first
+            message to the final drop-off.
+          </p>
+          <p>
+            That means a cleaner booking process, clearer package choices,
+            reliable vehicles, and destination pages that actually help people
+            decide instead of overwhelming them.
+          </p>
+        </div>
+      </section>
+
+      <section class="section container" id="gallery">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Gallery</span>
+          <h2>Visual proof without the clutter.</h2>
+          <p>
+            A more restrained gallery makes the brand feel more expensive and
+            easier to trust.
+          </p>
+        </div>
+
+        <div class="gallery-mosaic">
+          <img
+            class="reveal"
+            src="images/dubai.jpeg"
+            alt="Safari destination view"
+          />
+          <img
+            class="reveal"
+            src="images/equator.jpeg"
+            alt="Equator travel photo"
+          />
+          <img
+            class="reveal"
+            src="images/mara 2.jpeg"
+            alt="Safari wildlife scene"
+          />
+          <img
+            class="reveal"
+            src="images/WhatsApp Image 2024-10-06 at 11.24.41 (1).jpeg"
+            alt="Beach and travel scene"
+          />
+        </div>
+
+        <div class="section-cta reveal">
+          <div>
+            <span class="eyebrow">More imagery</span>
+            <h3>The gallery should sell atmosphere, not just thumbnails.</h3>
+          </div>
+          <a class="button button-secondary" href="gallery/ga.html"
+            >Open gallery</a
+          >
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-layout">
+          <div class="contact-map reveal">
+            <iframe
+              title="Safari Market Tours location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8149639305634!2d36.81876097570565!3d-1.284984198702795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6e93c9d1d%3A0xa59021c48035f9ff!2sUganda%20House%2C%20Kenyatta%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1728318570502!5m2!1sen!2ske"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <div class="contact-card reveal">
+            <span class="eyebrow">Contact</span>
+            <h2>Start with a message. We’ll shape the route from there.</h2>
+            <p>
+              Use this form for trip planning, transport questions, missionary
+              coordination, or custom itinerary requests.
+            </p>
+
+            <form
+              action="https://formspree.io/f/xayrkvop"
+              method="POST"
+              target="_blank"
+              class="contact-form"
+            >
+              <label>
+                <span>Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+              </label>
+              <label>
+                <span>Message</span>
+                <textarea
+                  rows="5"
+                  name="message"
+                  placeholder="Tell us about your trip"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="button button-primary">
+                Send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="script.js"></script>
 
-</body>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="#hero">
+            <img
+              src="images/logo.png"
+              alt="Safari Market Tours logo"
+              class="brand-mark"
+            />
+            <span>
+              <strong>Safari Market</strong>
+              <small>Your fulfillment is our pride.</small>
+            </span>
+          </a>
+          <p>
+            Premium safari planning, vehicle support, and purpose-led travel
+            from Nairobi.
+          </p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="#journeys">Journeys</a>
+          <a href="#fleet">Fleet</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <a href="about%20us/about.html">About us</a>
+          <a href="missions/missions.html">Missionary work</a>
+          <a href="bookings/booking.html">Bookings</a>
+        </div>
+        <div>
+          <h3>System status</h3>
+          <p class="status-line">
+            <span></span>Operational and open for bookings
+          </p>
+          <a href="mailto:info@safarimarketafrica.com"
+            >info@safarimarketafrica.com</a
+          >
+          <a href="tel:+254722519360">+254 722 519 360</a>
+        </div>
+      </div>
+    </footer>
 
+    <script src="script.js" defer></script>
+  </body>
 </html>

@@ -1,104 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now Form</title>
-    <link rel="stylesheet" href="book.css">
-    <script src="script.js" defer></script>
-    <script src="options.js" defer></script> <!-- Load options.js -->
-    <style>
-        /* Add some basic styling to make the form look decent */
-        .hidden {
-            display: none;
-        }
-        /* Add more styles as needed */
-    </style>
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <a href="../index.html#hero">
-                <img src="../images/logo.png" alt="Travel Logo" class="logo-image">
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plan a safari, mountain climb, vehicle hire, or purpose-led trip with Safari Market Tours."
+    />
+    <title>Plan Your Trip | Safari Market Tours</title>
+    <link rel="icon" href="../images/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="book.css" />
+    <script src="options.js" defer></script>
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <nav class="nav-shell" aria-label="Primary">
+        <a class="brand" href="../index.html#hero">
+          <img
+            src="../images/logo.png"
+            alt="Safari Market Tours logo"
+            class="brand-mark"
+          />
+          <span>
+            <strong>Safari Market</strong>
+            <small>Trip planning desk</small>
+          </span>
+        </a>
+        <div class="nav-group">
+          <a href="../index.html#journeys">Journeys</a>
+          <a href="../index.html#fleet">Fleet</a>
+          <a href="../index.html#contact">Contact</a>
         </div>
-        <ul class="nav-links" id="nav">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="/about us/about.html">About Us</a></li>
-            <li><a href="/destination/des.html">Destinations</a></li>
-            <li><a href="/rides/rides.html">Car Hire</a></li>
-            <li><a href="/missions/missions.html">Missionary work</a></li>
-        </ul>
-    </nav>
+      </nav>
+    </header>
 
-    <form id="inquiryForm" onsubmit="showCardDetails(event)">
-        <label>
-            Name:
-            <input type="text" name="name" required>
-        </label>
-        <label>
-            Email:
-            <input type="email" name="email" required>
-        </label>
-        <label>
-            Inquiry about:
-            <select id="inquirySelect">
-                <option value="">Select...</option>
-                <!-- Options will be populated by options.js -->
-            </select>
-        </label>
-        <div id="details" class="hidden"></div>
-        <label>
-            Description of inquiry:
-            <textarea name="message" required></textarea>
-        </label>
-        <button type="submit">Send</button>
-    </form>
+    <main>
+      <section class="booking-hero">
+        <div class="booking-hero__image" aria-hidden="true">
+          <img src="../images/nairobi1.jpg" alt="" />
+        </div>
+        <div class="booking-hero__overlay" aria-hidden="true"></div>
+        <div class="booking-hero__content container">
+          <span class="eyebrow">Booking desk</span>
+          <h1>Plan the trip before it becomes the trip.</h1>
+          <p>
+            Send the route, dates, and travel type. We’ll shape the itinerary,
+            vehicle, or missionary support around the real brief instead of
+            forcing a generic package.
+          </p>
+        </div>
+      </section>
 
-    <div id="cardDetailsForm" class="hidden">
-        <h3>Card Details</h3>
-        <form id="paymentForm">
-            <label>
-                Card Number:
-                <input type="text" name="cardNumber" required>
-            </label>
-            <label>
-                Expiration Date:
-                <input type="text" name="expirationDate" required>
-            </label>
-            <label>
-                CVV:
-                <input type="text" name="cvv" required>
-            </label>
-            <button type="submit">Pay</button>
-        </form>
-    </div>
+      <section class="booking-section container">
+        <div class="booking-grid">
+          <article class="booking-card booking-card--info">
+            <span class="eyebrow">Why this format works</span>
+            <h2>Less friction. Better planning. No fake payment step.</h2>
+            <p>
+              This page is designed as an inquiry intake, not a checkout screen.
+              That keeps the experience honest and lets the team respond with a
+              proper quote or trip plan.
+            </p>
 
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-column">
-                <a href="#hero" style="text-decoration: none;">
-                    <h3>TRAVEL</h3>
-                </a>
-                <p>Your fulfillment is our pride.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="booking-points">
+              <div>
+                <strong>Trips</strong>
+                <span
+                  >Safaris, climbs, coastal escapes, and regional routes.</span
+                >
+              </div>
+              <div>
+                <strong>Transport</strong>
+                <span
+                  >Self-drive or guided vehicle support depending on the
+                  route.</span
+                >
+              </div>
+              <div>
+                <strong>Purpose travel</strong>
+                <span
+                  >Missionary and community work planning with a more respectful
+                  flow.</span
+                >
+              </div>
             </div>
 
-            <div class="footer-column">
-                <h4>CONTACT US</h4>
-                <ul>
-                    <li><a href="mailto:INFO@SAFARIMARKETAFRICA.COM">info@safarimarketafrica.com</a></li>
-                    <li>+254722519360</li>
-                    <li>+25436519360</li>
-                    <li>View Park Towers 14th floor</li>
-                    <li>Utalii Lane</li>
-                </ul>
-            </div>
+            <a class="back-link" href="../index.html">Back to home</a>
+          </article>
+
+          <article class="booking-card booking-card--form">
+            <h2>Trip inquiry form</h2>
+            <form
+              id="inquiryForm"
+              action="https://formspree.io/f/xayrkvop"
+              method="POST"
+              target="_blank"
+              class="booking-form"
+            >
+              <label>
+                <span>Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Inquiry about</span>
+                <select id="inquirySelect" name="inquiry" required>
+                  <option value="">Select...</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Travel dates</span>
+                <input
+                  type="text"
+                  name="travelDates"
+                  placeholder="Example: 12–18 August 2026"
+                />
+              </label>
+
+              <label>
+                <span>Party size</span>
+                <input
+                  type="text"
+                  name="partySize"
+                  placeholder="Example: 2 adults, 1 child"
+                />
+              </label>
+
+              <label>
+                <span>Description of inquiry</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Tell us where you want to go, how you want to move, and what matters most."
+                  required
+                ></textarea>
+              </label>
+
+              <button type="submit" class="button">Send inquiry</button>
+            </form>
+          </article>
         </div>
-    </footer>
-</body>
+
+        <div class="support-band">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <p>
+              <a href="mailto:info@safarimarketafrica.com"
+                >info@safarimarketafrica.com</a
+              >
+            </p>
+          </div>
+          <div>
+            <span class="eyebrow">Phone</span>
+            <p><a href="tel:+254722519360">+254 722 519 360</a></p>
+          </div>
+          <div>
+            <span class="eyebrow">Location</span>
+            <p>View Park Towers, 14th floor, Utalii Lane, Nairobi</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
