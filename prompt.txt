@@ -1,0 +1,175 @@
+in the case of prompt engineering.
+
+Create a complete, spectacular, premium travel and safari website called moeshatour for Safari Market Tours. The goal is to rebuild the entire project into a world-class, highly polished, responsive, and conversion-focused digital experience that feels like a luxury travel brand rather than a generic brochure site.
+
+Use the current project as a reference point, but do not preserve the old visual weakness. The new output must feel intentional, cinematic, editorial, and professionally engineered. The site should look like a real product a travel company could launch and confidently present to clients, partners, and investors.
+
+Project identity:
+
+- Project name: moeshatour
+- Brand: Safari Market Tours
+- Git repository: https://github.com/allhailgachuri/moeshatour.git
+- Primary purpose: showcase safari tours, destination itineraries, car hire, missionary travel, gallery visuals, and trip booking/inquiry workflows
+- Business context: Nairobi-based travel and safari services in Kenya and Tanzania
+
+Overall objective:
+
+- Recreate the entire website from scratch in a way that feels premium, elegant, and highly responsive.
+- Make the site feel like a real-world game changer that solves actual trip planning and travel coordination problems.
+- Ensure the presentation is deep, clear, trustworthy, and commercially strong.
+- Build a visual language that feels cinematic and luxurious without becoming impractical or cluttered.
+- Prioritize clarity, brand confidence, high-end aesthetics, usability, and conversion.
+
+Design direction:
+
+- Use inspiration from fluid.glass for glassmorphism, depth, translucency, blur, layered surfaces, and premium motion treatment.
+- Use inspiration from johnbowtoursandtravel.com, stejostours.com, and bonfireadventures.com for travel presentation, service clarity, destination storytelling, and practical booking flow.
+- Make the site feel intentionally designed, not template-driven.
+- Avoid generic AI layout patterns.
+- Avoid bland corporate travel styling.
+- Avoid overused purple-heavy aesthetics.
+- Use warm, earthy, travel-appropriate tones, or another highly deliberate palette that feels premium and coherent.
+- Use strong typography contrast, polished spacing, and carefully considered image presentation.
+- Make every container, card, and section feel like part of one design system.
+
+Mandatory qualities:
+
+- Extremely responsive on mobile, tablet, and desktop.
+- Highly polished visual hierarchy.
+- Clear brand storytelling.
+- Strong trust signals.
+- Beautiful section transitions.
+- Elegant cards and sections.
+- Accessible semantics and readable contrast.
+- Clean navigation.
+- Professional motion and hover interaction.
+- Cohesive content architecture.
+
+Favicon requirement:
+
+- Use the logo.png file from the project as the favicon.
+- Ensure the favicon is set properly in the document head.
+
+What the site must communicate:
+
+- Safari Market Tours creates memorable East African travel experiences.
+- The company offers safari packages, mountain climbs, destination travel, car hire, gallery proof, and missionary work support.
+- The business should feel established, helpful, and confident.
+- The user should understand immediately what the company does and why it is worth trusting.
+
+Recommended content structure:
+
+1. Hero section
+- Full-bleed cinematic hero image.
+- Strong brand headline.
+- Short one-line purpose statement.
+- Clear call-to-action buttons.
+- Supporting trust copy or key stats.
+- Elegant overlay and premium atmospheric treatment.
+
+2. Service or value proposition section
+- Explain the key things the company does.
+- Include booking support, local guidance, destination choice, transport, and purpose-led travel.
+- Present the content as premium cards or glass panels.
+
+3. Featured journeys section
+- Showcase key destination packages.
+- Include safari, mountain, and coastal examples.
+- Use destination imagery, short descriptions, and clear booking links.
+- Make the section feel curated and editorial.
+
+4. Fleet or transport section
+- Present the car hire service as a serious part of the travel experience.
+- Show vehicles in a polished, responsive grid.
+- Explain how transport fits different journey types.
+
+5. Brand story section
+- Explain who Safari Market Tours is.
+- Include history, operational context, and service philosophy.
+- Make the copy feel trustworthy, not overly salesy.
+
+6. Philosophy or manifesto section
+- Describe the company’s approach to travel planning.
+- Show the difference between generic travel selling and intentional experience design.
+- Make it feel bold and premium.
+
+7. Gallery section
+- Show visual proof through carefully selected images.
+- Keep the layout elegant and uncluttered.
+- Use it to reinforce atmosphere and quality.
+
+8. Contact section
+- Include a map, form, contact details, and location information.
+- Make the inquiry flow clear and honest.
+- The form should be easy to use on mobile.
+
+9. Footer
+- Include brand identity, supporting links, company details, and status indicators.
+- Make the footer feel integrated into the design rather than appended.
+
+10. Booking or inquiry page
+- Build an inquiry-first flow.
+- Do not imply a secure payment system if one is not implemented.
+- Capture travel dates, party size, inquiry type, and message details.
+- Make the flow practical and trustworthy.
+
+Technical direction:
+
+- If building as a static project, use HTML, CSS, and JavaScript with a strong component-like structure.
+- If converting to a framework, use React, Next.js, or Nuxt with reusable components.
+- Keep content data-driven where possible.
+- Use a single consistent design system.
+- Keep repeated markup to a minimum.
+- Use semantic HTML.
+- Make everything fast and responsive.
+
+If using a framework, prefer:
+
+- Next.js or Nuxt for routing and scalability.
+- TypeScript for robustness.
+- Tailwind CSS or a disciplined design-token system.
+- GSAP or a similar animation layer for tasteful motion.
+- A data source or content structure for destinations and vehicles.
+
+Animation direction:
+
+- Use subtle, premium motion only.
+- Animate hero text and sections with smooth entrance behavior.
+- Use hover lifts and magnetic-feeling buttons.
+- Use scroll-based reveals sparingly and with discipline.
+- Keep motion sophisticated rather than flashy.
+
+Implementation notes:
+
+- The final output should feel like a complete, real product.
+- Treat the site as a travel sales experience, not just a visual mockup.
+- Ensure every section has a purpose.
+- Ensure every CTA has a reason to exist.
+- Ensure the site can actually be used to understand the brand, explore offerings, and initiate contact.
+- Preserve a premium feel from top to bottom.
+
+Content priorities:
+
+- Make the language specific and confident.
+- Make the branding feel established.
+- Make the design feel expensive.
+- Make the layout feel intentional.
+- Make the booking journey feel easy.
+- Make the company look trustworthy and modern.
+
+Additional guidance:
+
+- Avoid placeholder-looking UI.
+- Avoid generic stock section layouts.
+- Avoid clutter.
+- Avoid weak hierarchy.
+- Avoid inconsistent spacing.
+- Avoid mismatched button styles.
+- Avoid broken image presentation.
+- Avoid dead or awkwardly labeled sections.
+- Avoid overdecorated or noisy visuals that compete with the content.
+
+Final execution goal:
+
+- Recreate moeshatour as a spectacular, responsive, professional travel website that combines premium visual design, strong brand storytelling, modern usability, and practical conversion flow.
+- Make it feel like a real travel product that could genuinely be launched, marketed, and improved over time.
