@@ -1,4 +1,4 @@
-# moeshatour
+# Moeshatour
 
 Repository: [https://github.com/allhailgachuri/moeshatour.git](https://github.com/allhailgachuri/moeshatour.git)
 
